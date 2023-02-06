@@ -30,7 +30,21 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
 
+  final String androidTestUnitId = 'ca-app-pub-3940256099942544/6300978111';
+
   BannerAd? banner;
+
+  @override
+  void initState() {
+    super.initState();
+
+    banner = BannerAd(
+      listener: BannerAdListener(),
+      size : AdSize.banner,
+      adUnitId : androidTestUnitId,
+      request : AdRequest(),
+    )..load();
+  }
 
   @override
   Widget build(BuildContext context) {
