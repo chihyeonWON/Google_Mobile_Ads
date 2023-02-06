@@ -24,3 +24,20 @@ AndroidManifest에 다음 코드를 작성하여 애드몹 Id를 추가해주었
 ```
 ![image](https://user-images.githubusercontent.com/58906858/216882345-6154106b-d7c8-4255-b457-52b0f4750695.png)
 ![image](https://user-images.githubusercontent.com/58906858/216882480-c334fe3c-f344-44fe-bac0-63e0d09d6a51.png)
+
+## banner 객체 생성과 설정하기
+```
+google_mobile_ads 라이브러리를 프로젝트에서 import하고 bannerAd 타입의 banner 객체를 하나 생성합니다.
+banner를 initState()안에서 설정해 줍니다.
+banner는 bannerAd()의 4개의 필요한 옵션을 설정하여야 합니다(required).
+각 옵션을 살펴보면,
+listener : 광고가 로딩이 되었을 때, 실패했을 때, 클릭했을 때 등 이벤트를 넣거나 통계를 따거나 할 때 사용할 수 있습니다.
+size : 광고의 크기를 설정해 줄 수 있습니다.
+adUnitId : 유닛 아이디 즉 안드로이드와 ios 기종에 맞는 앱 아이디를 넣어주면 됩니다. 여기서는 위에서 만든 테스트용 아이디를 넣어주었습니다.
+request : 키워드를 설정할 수 있습니다. 기대 효과 CPM을 높혀서 광고 수익을 늘리거나 할 수 있습니다. (CPM은 1000회 노출당 비용을 의미하는 'cost per 1000 impressions'의 약자)
+
+이렇게 하면 광고 배너의 설정은 끝이 납니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/216882812-9a4d3faf-eaeb-4916-84d7-593e21d5e5b4.png)
+![image](https://user-images.githubusercontent.com/58906858/216883351-5fc454fa-1076-409f-9439-c337b14751b6.png)
+
