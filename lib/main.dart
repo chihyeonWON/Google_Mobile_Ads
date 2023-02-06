@@ -54,7 +54,27 @@ class _HomeScreenState extends State<HomeScreen> {
         title:Text('Google Mobile Ads'),
       ),
       body: Column(
-        children:[],
+        children:[
+          Expanded(
+            child: ListView.separated(
+                itemBuilder: (_, index){
+                  return Container(
+                    child: Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Center(
+                        child: Text(
+                          index.toString(),
+                        ),
+                      ),
+                    )
+                  );
+                },
+                separatorBuilder: (_, index) {
+                  return Divider();
+                },
+                itemCount: 100,),
+          )
+        ],
       )
     );
   }
