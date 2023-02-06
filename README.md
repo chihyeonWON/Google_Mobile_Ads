@@ -41,3 +41,21 @@ request : 키워드를 설정할 수 있습니다. 기대 효과 CPM을 높혀�
 ![image](https://user-images.githubusercontent.com/58906858/216882812-9a4d3faf-eaeb-4916-84d7-593e21d5e5b4.png)
 ![image](https://user-images.githubusercontent.com/58906858/216883351-5fc454fa-1076-409f-9439-c337b14751b6.png)
 
+## 앱 맨 밑에 광고 배너가 들어가는 상황 설정
+[mergeExtDexDebug 오류 해결방법](https://kwonsaw.tistory.com/412)
+```
+애플리케이션 맨 밑에 광고 배너가 들어가는 상황을 설정해보고 테스트 해 보겠습니다.
+
+ListView.seperated으로 0부터 100개의 리스트를 만들어 주고 맨 밑에
+Container(height:50)만큼의 공간에 광고 배너를 넣는다고 가정하겠습니다.
+
+중간에 Execution failed for task ':app:mergeExtDexDebug' 오류가 떴는데 이는 오류 해결방법을 구글링해서
+찾아서 해결하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/216885848-9ba29a5e-2ee7-426c-8b7c-afd9b3a13ee1.png)
+## [앱 최하단에 테스트 광고 배너가 생긴 모습]
+![image](https://user-images.githubusercontent.com/58906858/216885883-513caaad-1457-4e44-8496-57403ef70fc4.png)
+## [테스트 광고 배너를 클릭했을 때]
+![image](https://user-images.githubusercontent.com/58906858/216885943-777c4103-a10c-4e8a-b035-f18acd9c408f.png)
+
+
