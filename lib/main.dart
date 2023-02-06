@@ -73,7 +73,13 @@ class _HomeScreenState extends State<HomeScreen> {
                   return Divider();
                 },
                 itemCount: 100,),
-          )
+          ),
+          Container( // 광고가 들어갈 Container
+            height: 50.0,
+            child:this.banner == null // 광고가 없다면
+                ? Container() // 빈 컨테이너를
+                : AdWidget(ad: this.banner!,), // 광고가 있다면 광고위젯을 보여줌
+          ),
         ],
       )
     );
