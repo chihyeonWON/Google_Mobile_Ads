@@ -30,6 +30,8 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
 
+  BannerAd? banner;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
